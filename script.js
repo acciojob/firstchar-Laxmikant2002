@@ -1,9 +1,10 @@
 function firstChar(text) {
   // your code here
-  for (let i = 0; i < text.length; i++) {
-    if (text[i] !== ' ') return text[i];
-  }
-  return '';
+  text = text.trim();
+  // If the string is empty after trimming, return ''
+  if (text === '') return '';
+  // Return the first character
+  return text[0];
 }
 
 // Do not change the code below
